@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    *{
+  box-sizing:border-box;
+}
+
+
+table{
+  text-align:center;
+  border-collapse:collapse;
+}
+
+
+td{
+  width: 50px;
+  height:50px;
+  border:5px solid blue;
+   position:relative;
+}
+
+td:hover::before{
+  content:'';
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:-5px;
+  left:-5px;
+  border:5px solid;
+  border-color:red;
+  border-right-color:black;
+  border-bottom-color:white;
+  border-top-color:orange;
+}
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+</table>
+</body>
+</html>

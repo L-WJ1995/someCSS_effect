@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    .a{
+  width: 200px;  
+  height: 200px;
+  background-color: black;
+  position:relative;
+  transition:.5s;
+}
+
+.b{
+  position:absolute;
+  height: 5px;
+  background-color: black;
+  width:0px;
+  bottom:0;
+transition:.5s  .5s;
+}
+.c{
+  position:absolute; 
+  background-color: black;
+  width:5px;
+    height: 0px;
+  transition:.5s;
+}
+.d{
+    position:absolute; 
+  background-color: black;
+  width:5px;
+    height: 0px;
+  transition:.5s 1s;
+  bottom:0px;
+    right:0px;
+}
+
+.e{
+      position:absolute; 
+  background-color: black;
+  width:0px;
+    height: 5px;
+  transition:.5s 1.5s;
+  top:0px;
+    right:0px;
+}
+
+
+.a:hover{
+  background-color: white;
+}
+.a:hover > .b,.a:hover > .e{
+  width:100%;
+}
+
+.a:hover > .c,.a:hover > .d{
+  height:100%;
+}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div class="a">
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+    <div class="e"></div>
+</div>
+</body>
+</html>

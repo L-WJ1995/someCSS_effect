@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+
+    .a {
+        background-color: black;
+    }
+
+    .a p {
+        color: white;
+        margin-top: 0px;
+        padding-left: calc(50% - 300px);
+        padding-right: calc(50% - 300px)
+    }
+
+    .b-1 {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .c,
+    .d {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    table {
+        border-spacing: 30px 15px;
+        margin: 0 -30px;
+    }
+
+    th {
+        border: 3px solid;
+        width: 174px;
+        text-align: left;
+        height: 34px;
+        background-color: pink;
+    }
+
+    .d ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul>li:nth-child(2n) {
+
+        border-style: dotted none;
+    }
+
+    .e {
+        background-color: black;
+        text-align: center;
+    }
+
+    .e p {
+
+        color: white;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    th:hover {
+        background-color: red;
+        border: 3px solid black;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div class="a">
+        <p>hello world 请调整浏览器窗口大小查看效果</p>
+    </div>
+    <div>
+        <div class="b">
+            <p class="b-1">
+                页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+            </p>
+        </div>
+        <div class="c">
+            <table>
+                <tr>
+                    <th>宽180高40(包含边框)</th>
+                    <th>产品</th>
+                    <th>产品</th>
+                </tr>
+                <tr>
+                    <th>水平间隙30px</th>
+                    <th>产品</th>
+                    <th>产品</th>
+                </tr>
+                <tr>
+                    <th>垂直间隙15px</th>
+                    <th>产品</th>
+                    <th>产品</th>
+                </tr>
+                <tr>
+                    <th>边框宽度3px</th>
+                    <th>产品</th>
+                    <th>产品</th>
+                </tr>
+            </table>
+        </div>
+        <div class="d">
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </div>
+    </div>
+    <div class="e">
+        <p>©版权所有
+            <br> 本页所有布局均使用块元素
+        </p>
+    </div>
+</body>
+
+</html>

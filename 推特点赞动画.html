@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+    }
+
+    .ico {
+        height: 200px;
+        width: 200px;
+        background-color: #708090;
+        border: 0.1px solid;
+    }
+
+    .ico-1 {
+        display: block;
+        height: 50%;
+        width: 50%;
+        background-repeat: no-repeat;
+
+        background-color: white;
+        margin: 50px;
+        background-image: url(../picture/web_heart_animation_edge.png);
+    }
+
+    .ico-2 {
+        display: block;
+        height: 15%;
+        width: 50%;
+        background-repeat: no-repeat;
+        margin: 0 50px;
+        background-image: url(../picture/web_heart_animation_edge.png);
+    }
+
+
+    #ico-click {
+        display: none;
+    }
+
+    #ico-click:checked~label>div {
+        background-position: -2800px center;
+        background-color: black;
+        transition: background-color 1.5s;
+        transition: background-position 1.5s steps(28);
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div class="ico">
+        <input type="checkbox" id="ico-click">
+        <label for="ico-click">
+            <div class="ico-1">
+            </div>
+        </label>
+    </div>
+</body>
+
+</html>

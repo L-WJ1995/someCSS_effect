@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 0;
+    }
+
+    .xaaaa {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+    }
+
+    .fz {
+        font-size: 20px;
+    }
+
+    .head {
+        height: 50px;
+        width: 100vw;
+        min-width: 800px;
+        background-color: tan;
+        border: 2px solid red;
+    }
+
+    ul {
+        display: inline-block;
+        line-height: 46px;
+        padding: 0;
+    }
+
+    li {
+
+        color: white;
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .daosanjiao {
+
+        box-sizing: border-box;
+        border: 7px solid white;
+        height: 0;
+        width: 0;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        top: 20.5px;
+        right: -18px;
+    }
+
+
+    .li {
+        position: relative;
+        margin-right: 29px;
+    }
+
+
+    .none {
+        display: none;
+        position: absolute;
+        top: 48px;
+        left: -15px;
+        width: 175px;
+        height: 46px;
+        background-color: red;
+        top: 48px;
+    }
+
+    .li-son {
+        display: block;
+        font-size: 20px;
+        margin: 0px auto;
+        width: 175px;
+        height: 46px;
+        line-height: 46px;
+        background-color: black;
+        padding-left: 12px;
+        xtransition: position 2s;
+    }
+
+    #li-3:hover>.none {
+        display: block;
+    }
+
+
+    .none-2 {
+        display: none;
+        position: absolute;
+        width: 175px;
+        height: 46px;
+        background-color: red;
+        top: 46px;
+        left: 175px
+    }
+
+    .li-son-2 {
+        display: block;
+        font-size: 20px;
+        margin: 0px auto;
+        width: 175px;
+
+
+        background-color: black;
+        padding-left: 15px;
+    }
+
+    .li-son-2:hover {
+        background-color: orange;
+    }
+
+    .li-son-2:hover>.none-2 {
+        display: block;
+    }
+
+
+    .li-son:hover {
+        background-color: orange;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div class="head">
+        <ul>
+            <li class="fz ">首页</li>
+            <li class="fz li">HTML+CSS
+                <div class="daosanjiao"></div>
+            </li>
+            <li class="fz li" id="li-3">javaScript
+                <div class="daosanjiao"></div>
+                <ul class="none">
+                    <li class="li-son">ES2015(ES6)</li>
+                    <li class="li-son li-son-2">Vue.js
+                        <ul class="none-2">
+                            <li class="li-son-2">jQuery</li>
+                            <li class="li-son-2">实用函数方法
+                                <ul class="none-2">
+                                    <li class="li-son-2">jQuery</li>
+                                    <li class="li-son-2">实用函数方法</li>
+                                    <li class="li-son-2">Node.js</li>
+                                </ul>
+                            </li>
+                            <li class="li-son-2">Node.js</li>
+                        </ul>
+                    </li>
+                    <li class="li-son">React</li>
+                    <li class="li-son">jQuery</li>
+                    <li class="li-son">实用函数方法</li>
+                    <li class="li-son">Node.js</li>
+                </ul>
+            </li>
+            <li class="fz li">前端工具
+                <div class="daosanjiao"></div>
+            </li>
+            <li class="fz li">前端资源
+                <div class="daosanjiao"></div>
+            </li>
+            <li class="fz">标签</li>
+        </ul>
+    </div>
+</body>
+
+</html>

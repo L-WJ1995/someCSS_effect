@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  position:relative;
+  height:calc(100% - 110px); 
+  min-height:133.74px;
+  margin-top:50px;
+}
+*{
+  margin:0px;
+  box-sizing: border-box;
+}
+
+.b{
+  max-width:620px;
+  min-width:620px;
+  margin:auto;
+}
+.b p{
+  font-size:20px;
+  font-weight:100;
+}
+.b p+p{
+  font-size:15px;
+  font-weight:normal;
+}
+
+.b h1,p{
+  margin:0px auto 10px auto;
+  
+}
+
+.a{
+  
+  height:60px;
+  width:100%;
+  color:red;
+  position:absolute;
+  bottom:-60px;
+  padding-left:calc((100% - 620px)/2);
+  background-color:rgba(0,0,0,0.3);
+}
+span{
+  width:620px;
+  display:inline-block;
+  line-height: 60px;
+}
+
+
+
+
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div class="b">
+
+    <h1>Sticky footer</h1>
+  <p>Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+  <p>Use the sticky footer with a fixed navbar if need be, too.</p>
+
+</div>
+<div class="a"><span>
+ Place sticky footer content hee.</span></div>
+</body>
+</html>
